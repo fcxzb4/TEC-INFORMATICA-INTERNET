@@ -1,0 +1,15 @@
+@import url(./default.css);
+@import url(./vars.css);
+@import url(./footer.css);
+@import url(./header.css);
+@import url(./main.css);
+@import url(./square.css);
+
+body{
+    width: 100vw;
+    height: 100vh;
+
+    background-image: url(./../img/bg_body.png);
+    background-size: cover;
+    background-position: center;
+}
