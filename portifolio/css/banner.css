@@ -1,5 +1,5 @@
 #nav_banner{
-    width: 100%;
+    width: 100vw;
     height: 40%;
 
     margin: 2% 0 0;
@@ -26,9 +26,11 @@
 }
 
 .banner{
-    width: 94%;
+    width: 90vw;
     height: 100%;
-    margin: 0 3%;
+
+    margin: 0 5vw;
+
     background-color: red;
 }
 
