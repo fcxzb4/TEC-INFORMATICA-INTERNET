@@ -1,0 +1,97 @@
+header {
+    width: 100%;
+    height: 16%;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#logo_profession {
+    width: 45%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+
+    font-size: 3vw;
+    font-family: var(--fontP);
+    color: var(--white);
+}
+
+#logo {
+    width: 15%;
+    height: 80%;
+
+    background-image: url(./../../assets/img/logo.png);
+    background-size: cover;
+    background-position: center;
+}
+
+#btns_header {
+    width: 35%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.btn_header {
+    align-items: center;
+    background-image: linear-gradient(144deg,rgba(224, 95, 54, 1) 41%, rgba(79, 161, 140, 1) 72%, rgba(72, 97, 91, 1) 100%);
+    border: 0;
+    border-radius: 8px;
+    box-shadow: var(--black) 0 15px 30px -5px;
+    padding: 0;
+    box-sizing: border-box;
+    color: var(--white);
+    font-size: 1vw;
+    line-height: 1em;
+    width: 30%;
+    height: 30%;
+    text-decoration: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.btn_header:active,
+.btn_header:hover {
+    outline: 0;
+}
+
+.btn_header .animation {
+    border-radius: 7px;
+    background-color: var(--black);
+    width: 100%;
+    height: 100%;
+    transition: 300ms;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 10%;
+}
+
+.btn_header h1{
+    border-radius: 0 6px 6px 0;
+}
+.btn_header i{
+    border-radius: 6px 0 0 6px;
+}
+
+.btn_header:hover .animation {
+    background: none;
+}
+
+.btn_header:active {
+    transform: scale(0.9);
+}

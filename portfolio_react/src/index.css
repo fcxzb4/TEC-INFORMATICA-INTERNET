@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Jockey+One&family=Julius+Sans+One&display=swap');
+
+:root{
+    --white: #f9f9f9;
+    --whiteShadow: #f9f9f990;
+    --black: #363231;
+    --blackShadow: #36323165;
+
+    --primaryColor: #E05F36;
+    --secundaryColor: #4FA18C;
+    --terciaryColor: #48615B;
+
+    --fontP: "Jockey One";
+    --fontS: "Julius Sans One";
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
