@@ -1,8 +1,8 @@
 import styles from './button_text.module.scss'
 
-function ButtonText({ text }) {
+function ButtonText({ children }) {
     return <>
-        <button className={styles.ButtonText}>{text}</button>
+        <button className={styles.ButtonText}>{children}</button>
     </>
 }
 

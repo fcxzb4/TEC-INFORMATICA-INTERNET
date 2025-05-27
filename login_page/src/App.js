@@ -1,32 +1,24 @@
 import './App.css';
-import ButtonText from './components/ui/btn_text/ButtonText';
-import Input from './components/ui/input/Input';
-import { faKey, faEnvelope, faEye } from '@fortawesome/free-solid-svg-icons';
+import LoginBtns from './components/models/login_btns/LoginBtns';
+import LoginInputs from './components/models/login_inputs/LoginInputs';
 import TextNavigation from './components/ui/text_navigation/TextNavigation';
-import ButtonIcon from './components/ui/btn_enterprises/ButtonIcon';
-import { faApple, faGoogle, faWindows } from '@fortawesome/free-brands-svg-icons';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        {/* <Input
-          leftIcon={faEnvelope}
-          type='email'
-          name={"Email"}
-        />
-        <Input
-          leftIcon={faKey}
-          rightIcon={faEye}
-          type='password'
-          name={"Password"}
-        /> */}
-        {/* <ButtonText text={"ENTRAR"}/> */}
-        {/* <TextNavigation text={"Esqueci minha senha"}/> */}
-          {/* <ButtonIcon icon={faWindows}/>
-          <ButtonIcon icon={faApple}/>
-          <ButtonIcon icon={faGoogle}/> */}
-      </header>
+      <div className='Backgroud'></div>
+      <div className='Text'>
+        <h1>LOGIN</h1>
+        <p>Reserve sua viagem dos sonhos hoje!</p>
+      </div>
+      <div>
+        <LoginInputs />
+        <LoginBtns />
+      </div>
+      <div className='CreateAcount'>
+        <h6>Não tem uma conta?&nbsp;</h6>
+        <TextNavigation text={"Clique aqui!"} />
+      </div>
     </div>
   );
 }
