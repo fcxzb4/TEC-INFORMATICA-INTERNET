@@ -1,40 +1,9 @@
 .App {
-  height: 70vh;
-  width: 20vw;
-
+  width: 100vw;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
-
-  margin: 15vh 0 0;
-  border-radius: 1vw;
-  box-shadow: 8px 8px 24px 0px rgba(0, 0, 0, 1);
-
-  color: white;
-}
-.Backgroud{
-  position: absolute;
-  height: 70vh;
-  width: 20vw;
-  border-radius: 1vw;
-  background-color: #33333380;
-  backdrop-filter: blur(5px);
-  z-index: -1;
-}
-
-.Text{
-  width: 80%;
-  text-align: start;
-}
-h1{
-  font-size: 2.5vw;
-}
-p{
-  font-size: 0.8vw;
-}
-
-.CreateAcount{
-  display: flex;
-  font-size: 1.2vw;
+  justify-content: center;
+  background-image: url("https://th.bing.com/th/id/R.e21cd6b865d33385c98a463b27bbe3f2?rik=ZVsHAUO5T9byFA&pid=ImgRaw&r=0");
 }

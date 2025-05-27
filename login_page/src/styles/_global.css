@@ -1,16 +1,8 @@
-
-
 body{
   margin: 0;
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-image: url("https://th.bing.com/th/id/R.e21cd6b865d33385c98a463b27bbe3f2?rik=ZVsHAUO5T9byFA&pid=ImgRaw&r=0");
 }
 
 button{
