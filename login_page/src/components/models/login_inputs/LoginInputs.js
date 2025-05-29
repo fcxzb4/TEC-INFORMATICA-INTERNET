@@ -3,20 +3,22 @@ import Input from './../../ui/input/Input';
 import { faEnvelope, faKey } from '@fortawesome/free-solid-svg-icons';
 import TextNavigation from './../../ui/text_navigation/TextNavigation';
 
-function LoginInputs() {
+function LoginInputs({onChange}) {
     return <>
         <div className={styles.Inputs}>
             <Input
-                name="Email"
+                name="email"
                 type='email'
                 icon={faEnvelope}
+                onChange={onChange}
             />
             <Input
-                name="Password"
+                name="password"
                 type='password'
                 icon={faKey}
+                onChange={onChange}
             />
-            <TextNavigation text={"Esqueceu sua senha?"}/>
+            <TextNavigation text={"Esqueceu sua senha?"} />
         </div>
     </>
 }

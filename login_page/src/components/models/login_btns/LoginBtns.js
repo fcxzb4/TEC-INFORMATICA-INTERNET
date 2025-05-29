@@ -3,10 +3,10 @@ import styles from './login_btns.module.scss'
 import ButtonIcon from './../../ui/btn_enterprises/ButtonIcon';
 import { faApple, faGoogle, faMicrosoft } from '@fortawesome/free-brands-svg-icons';
 
-function LoginBtns() {
+function LoginBtns({tryLogin}) {
     return <>
         <div className={styles.LoginBtns}>
-            <ButtonText>ENTRAR</ButtonText>
+            <ButtonText onClick={tryLogin}>ENTRAR</ButtonText>
             <div>
                 <h6>OU</h6>
                 <div>

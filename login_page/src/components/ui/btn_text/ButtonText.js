@@ -1,9 +1,9 @@
 import { Link } from 'react-router-dom'
 import styles from './button_text.module.scss'
 
-function ButtonText({ children }) {
+function ButtonText({ children, onClick }) {
     return <>
-        <Link to={'/home'} className={styles.ButtonText}>{children}</Link>
+        <button onClick={onClick} className={styles.ButtonText}>{children}</button>
     </>
 }
 
