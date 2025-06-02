@@ -7,11 +7,11 @@ import styles from './login_page.module.scss'
 import { useNavigate } from 'react-router-dom';
 
 function LoginPage() {
-    const [loginForm, setLoginForm] = useState({
+    const [loginForm, setLoginForm] = 
+    useState({
         email: '',
         password: '',
     });
-    const navigate = useNavigate();
 
     const onChange = (e) => {
         const { name, value } = e.target;
@@ -21,10 +21,17 @@ function LoginPage() {
         }));
     }
 
+    const navigate = useNavigate();
+
+    const cad = {
+        email: 'teste@mail.com',
+        password: '12345678',
+    }
+
     const tryLogin = () => {
         const { email, password } = loginForm;
 
-        if (email === 'teste@mail.com' && password === '12345678') {
+        if (email === cad.email && password === cad.password) {
             alert("Login realizado com sucesso!");
             navigate('/home');
         } else {
