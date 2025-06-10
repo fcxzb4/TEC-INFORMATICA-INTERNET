@@ -1,6 +1,6 @@
 import ButtonText from '../../ui/btn_text/ButtonText';
 import styles from './login_btns.module.scss'
-import ButtonIcon from './../../ui/btn_enterprises/ButtonIcon';
+import ButtonIcon from '../../ui/btn_enterprises/ButtonIcon';
 import { faApple, faGoogle, faMicrosoft } from '@fortawesome/free-brands-svg-icons';
 
 function LoginBtns({tryLogin}) {

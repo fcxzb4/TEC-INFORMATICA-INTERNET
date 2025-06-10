@@ -2,7 +2,8 @@ import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import LoginPage from './pages/login_page/LoginPage';
 import Home from './pages/home_page/Home';
-import Header from './components/models/header/Header';
+import Header from './components/container/header/Header';
+import FormCardPage from './pages/form_card/FormCardPage';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Routes>
         <Route path='/' element={<LoginPage />} />
         <Route path='/home' element={<Home />} />
+        <Route path='/formCard' element={<FormCardPage />} />
       </Routes>
     </div>
   );
