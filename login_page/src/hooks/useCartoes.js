@@ -6,20 +6,17 @@ const STORAGE_KEY = 'cartoes';
 export const useCartoes = () => {
   const [cartoes, setCartoes] = useState([]);
 
-  // Carrega do storage ou do model, apenas uma vez
   useEffect(() => {
     const data = localStorage.getItem(STORAGE_KEY);
 
     if (data) {
       setCartoes(JSON.parse(data));
     } else {
-      // fallback para os dados do model
       setCartoes(cartoesBase);
       localStorage.setItem(STORAGE_KEY, JSON.stringify(cartoesBase));
     }
   }, []);
 
-  // Atualiza o storage quando o estado muda
   useEffect(() => {
     if (cartoes.length > 0) {
       localStorage.setItem(STORAGE_KEY, JSON.stringify(cartoes));
