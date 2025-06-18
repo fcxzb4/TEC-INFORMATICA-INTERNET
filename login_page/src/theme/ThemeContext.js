@@ -1,4 +1,6 @@
-import React, { createContext, useContext, useState, useEffect } from 'react';
+import React, {  createContext,  useContext,  useState,  useEffect} from 'react';
+import { ThemeProvider as StyledThemeProvider } from 'styled-components';
+import { lightTheme, darkTheme } from './themes';
 
 const ThemeContext = createContext();
 
@@ -8,20 +10,24 @@ export const ThemeProvider = ({ children }) => {
   });
 
   const toggleTheme = () => {
-    setTheme(prev => {
+    setTheme((prev) => {
       const newTheme = prev === 'light' ? 'dark' : 'light';
       localStorage.setItem('app-theme', newTheme);
       return newTheme;
     });
   };
 
+  const themeObject = theme === 'light' ? lightTheme : darkTheme;
+
   useEffect(() => {
     document.documentElement.setAttribute('data-theme', theme);
   }, [theme]);
 
   return (
-    <ThemeContext.Provider value={{ theme, toggleTheme }}>
-      {children}
+    <ThemeContext.Provider value={{ theme: theme, toggleTheme }}>
+      <StyledThemeProvider theme={themeObject}>
+        {children}
+      </StyledThemeProvider>
     </ThemeContext.Provider>
   );
 };
