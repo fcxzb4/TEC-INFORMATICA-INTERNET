@@ -1,5 +1,4 @@
-const input = require('prompt-sync')();
-let senha;
-do {
-    senha = input("Digite a senha: ");
-} while (senha != '12346578');
+ senha_digitada = input("Digite a senha: ");
+    tentativas--;
+    if(senha_digitada != senha){
+        cons

@@ -46,24 +46,78 @@
 // O maior número inserido até o momento.
 // Ao final do laço, o algoritmo deve exibir os três resultados calculados.
 
+// const input = require('prompt-sync')();
+// const totalNumeros = input("Quantos números: ");
+
+// let soma = 0;
+// let contagem = 0;
+// let maior;
+
+// for (let i = 0; i < totalNumeros; i++) {
+//     const numero = parseInt(input(`Qual o número ${i + 1}:  `));
+//     if (numero % 2 === 0) {
+//         soma += numero;
+//     } else {
+//         contagem++;
+//     }
+//     if (maior === undefined || maior < numero) {
+//         maior = numero;
+//     }
+// }
+// console.log(`A soma dos pares é ${soma}`);
+// console.log(`A contagem dos impares é ${contagem}`);
+// console.log(`O maior número é ${maior}`);
+
 // Desafio 2: (Laço while)
-// Faça um algoritmo que simule um caixa de supermercado. O script deve 
-// solicitar o preço de produtos um a um, continuamente, usando um laço 
+// Faça um algoritmo que simule um caixa de supermercado. O script deve
+// solicitar o preço de produtos um a um, continuamente, usando um laço
 // while. O laço deve parar apenas quando o usuário digitar 0 como preço.
-// O algoritmo deve manter um somatório do valor total da compra. 
-// Após o término do laço, se o valor total da compra ultrapassar 
-// R$ 150,00, um desconto de 10% deve ser aplicado. Por fim, exiba o 
-// subtotal da compra (soma dos preços), o valor do desconto (se houver) 
+// O algoritmo deve manter um somatório do valor total da compra.
+// Após o término do laço, se o valor total da compra ultrapassar
+// R$ 150,00, um desconto de 10% deve ser aplicado. Por fim, exiba o
+// subtotal da compra (soma dos preços), o valor do desconto (se houver)
 // e o valor final a ser pago.
 
+// const input = require('prompt-sync')();
+// let produto = 1;
+// let soma = 0;
+// let desconto = 0;
+// while(produto != 0){
+//     produto = parseFloat(input("Digite o valor do produto: ").replace(',', '.'));
+//     soma += produto;
+// }
+// if(soma > 150){
+//     desconto = soma * 0.1;
+// }
+// console.log(`Subtotal: ${soma}`); 
+// console.log(`Desconto: ${desconto}`);
+// console.log(`Total: ${soma - desconto}`); 
+
 // Desaio 3:(Laço do while)
-// Faça um algoritmo que implementa uma trava de segurança por tentativas. 
-// O script deve definir uma senha secreta (string) e um número máximo 
-// de tentativas (por exemplo, 3) no início do código. Usando um laço 
-// do-while, o script deve solicitar a senha ao usuário. A cada tentativa 
-// incorreta, ele deve exibir uma mensagem "Senha incorreta. Você tem 
-// X tentativa(s) restante(s)." e decrementar o contador de tentativas. 
-// O laço deve continuar enquanto a senha inserida estiver incorreta 
-// E o usuário ainda tiver tentativas restantes. Ao final, se o usuário 
-// acertou a senha, exiba "Acesso concedido.". Se as tentativas se 
+// Faça um algoritmo que implementa uma trava de segurança por tentativas.
+// O script deve definir uma senha secreta (string) e um número máximo
+// de tentativas (por exemplo, 3) no início do código. Usando um laço
+// do-while, o script deve solicitar a senha ao usuário. A cada tentativa
+// incorreta, ele deve exibir uma mensagem "Senha incorreta. Você tem
+// X tentativa(s) restante(s)." e decrementar o contador de tentativas.
+// O laço deve continuar enquanto a senha inserida estiver incorreta
+// E o usuário ainda tiver tentativas restantes. Ao final, se o usuário
+// acertou a senha, exiba "Acesso concedido.". Se as tentativas se
 // esgotarem, exiba "Acesso bloqueado.".
+
+// const input = require('prompt-sync')();
+// const senha = '12345';
+// let senha_digitada
+// let tentativas = 3;
+// do{
+//     senha_digitada = input("Digite a senha: ");
+//     tentativas--;
+//     if(senha_digitada != senha){
+//         console.log(`Senha incorreta. Você tem ${tentativas} tentativa(s) restante(s).`);
+//     }
+// }while(senha_digitada != senha && tentativas > 0);
+// if(senha_digitada == senha){
+//     console.log(`Acesso liberado em ${3 - tentativas} tentativas!`);
+// }else{
+//     console.log("Tentativas esgotadas!");
+// }
