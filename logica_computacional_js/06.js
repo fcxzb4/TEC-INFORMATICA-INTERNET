@@ -88,8 +88,47 @@ do {
 } while (op != 0);
 
 
-// Crie um questionario multipal escolha com 20 questões sobre 
+// Crie um questionario multipla escolha com 20 questões sobre 
 // funções em JS, aplique com os conteuds de laços, condicionais, 
 // parametros, retorno e entrada de dados, não utilize conteudos de
 // aroow functions, vetores e objetos, crie perguntas do tipo, teórico,
 // ache o erro, qual a saida e qual o codigo correto. 
+
+
+//Desaio 1:
+// Faça um algoritmo que possua uma função chamada calcularFatorial. 
+// Essa função deve:
+// Receber um único número inteiro e positivo como parâmetro.
+// Usar um laço de repetição (for ou while) para calcular o fatorial 
+// do número.
+// Retornar o resultado do cálculo.
+// No corpo principal do seu script, peça ao usuário para digitar um 
+// número, chame a função calcularFatorial passando o número do usuário 
+// e, por fim, exiba uma mensagem formatada com o resultado retornado 
+// pela função.
+
+//Desaio 2:
+// Faça um algoritmo que possua uma função chamada analisarNumero. 
+// A função deve:
+// Receber um número inteiro como parâmetro.
+// Verificar se o número é par ou ímpar.
+// Verificar se o número é positivo, negativo ou zero.
+// Usando essas informações, a função deve retornar uma string 
+// descritiva, como "Número Par e Positivo", "Número Ímpar e Negativo", 
+// ou "Zero".
+// No corpo principal do script, use um laço de repetição que peça ao 
+// usuário para digitar 3 números. Para cada número digitado, chame 
+// a função analisarNumero e exiba o resultado que ela retornou.
+
+//Desaio 3:
+// Faça um algoritmo que possua uma função chamada ehPrimo. 
+// A função deve:
+// Receber um número inteiro e positivo como parâmetro.
+// Usar um laço de repetição e condicionais para verificar 
+// se o número é primo (divisível apenas por 1 e por ele mesmo).
+// Retornar true se o número for primo, e false caso contrário.
+// No corpo principal do script, peça ao usuário um número N. 
+// Em seguida, crie um laço que percorra todos os números de 1 
+// até N, chamando a função ehPrimo para cada um deles. O script 
+// deve contar quantos números primos foram encontrados nesse 
+// intervalo e exibir a contagem total no final.
