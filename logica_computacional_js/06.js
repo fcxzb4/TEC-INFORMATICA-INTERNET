@@ -150,7 +150,7 @@
 //     } else {
 //         return 'Não é Número'
 //     }
-// }
+// }    
 // for (let i = 0; i < 3; i++){
 //     console.log(analisarNumero(parseInt(input("Digite um número: "))));
 // }
